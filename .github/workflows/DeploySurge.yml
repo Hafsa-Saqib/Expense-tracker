@@ -40,4 +40,4 @@ jobs:
         run: npm install --global surge
       
       - name: Deploy to surge
-        run: surge ./build expense-tracker-demo-app.surge.sh --token $({secrets.ET_TOKEN})
+        run: surge ./build expense-tracker-demo-app.surge.sh --token ${{secrets.ET_TOKEN}}
